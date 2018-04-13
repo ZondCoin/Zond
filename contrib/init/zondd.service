@@ -1,0 +1,26 @@
+[Unit]
+Description=Zond's distributed currency daemon
+After=network.target
+
+[Service]
+User=zond
+Group=zond
+
+Type=forking
+PIDFile=/var/lib/zondd/zondd.pid
+
+ExecStart=/usr/bin/zondd -daemon -pid=/var/lib/zondd/zondd.pid \
+          -conf=/etc/zond/zond.conf -datadir=/var/lib/zondd
+
+ExecStop=-/usr/bin/zond-cli -conf=/etc/zond/zond.conf \
+         -datadir=/var/lib/zondd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

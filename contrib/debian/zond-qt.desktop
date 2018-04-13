@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Zond
+Comment=Zond P2P Cryptocurrency
+Comment[fr]=Zond, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Zond, eşten eşe kriptografik sanal para birimi
+Exec=zond-qt %u
+Terminal=false
+Type=Application
+Icon=zond128
+MimeType=x-scheme-handler/zond;
+Categories=Office;Finance;

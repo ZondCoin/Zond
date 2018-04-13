@@ -1,0 +1,26 @@
+# /etc/conf.d/zondd: config file for /etc/init.d/zondd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/zond/zond.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/zondd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/zondd.pid"
+
+# Where to write zondd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/zondd"
+
+# User and group to own zondd process
+#BITCOIND_USER="zond"
+#BITCOIND_GROUP="zond"
+
+# Path to zondd executable
+#BITCOIND_BIN="/usr/bin/zondd"
+
+# Nice value to run zondd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
