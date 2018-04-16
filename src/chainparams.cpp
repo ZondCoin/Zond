@@ -95,7 +95,7 @@ public:
         pchMessageStart[1] = 0xb1;
         pchMessageStart[2] = 0xf8;
         pchMessageStart[3] = 0x3a;
-        vAlertPubKey = ParseHex("0453441050da40fd90e8de54be8d31f4378ee78e52682eae03873cd4b31b75348ffeda82432f9e0ec0ccbaf2aaba07965929907394652d0c784e4ff7c8eb6b72f1");
+        vAlertPubKey = ParseHex("04f40b1c024e28b01572cd45e6eb4af99be7df0f076ff6c31b8c4c43bd44885cf6c8c78241e6cac5dadee283f354e46c19830a00615cbb1255aa8521fb90ac12c5");
         nDefaultPort = 60128;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Zond starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -160,7 +160,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
         nPoolMaxTransactions = 3;
-        strSporkKey = "04b0a890956d502afbe62099c84a38aa841a6bcb4ef16869ee2aebc2fab492ba3095c42d53297816160406214f32edefaccbe521d78bc9eeceb072e92f11bcd3e8";
+        strSporkKey = "04f40b1c024e28b01572cd45e6eb4af99be7df0f076ff6c31b8c4c43bd44885cf6c8c78241e6cac5dadee283f354e46c19830a00615cbb1255aa8521fb90ac12c5";
         
         strObfuscationPoolDummyAddress = "ZMHLTkjhzkK2WzCs4hkYohN1oEEGLwphBC";
         nStartMasternodePayments = 1523548800; //Thursday, 12 April 2018 16:00:00 UTC
