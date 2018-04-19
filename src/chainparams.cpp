@@ -47,13 +47,14 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
 	(0, uint256("0x000008b12e1723cf0345e366e3d59ed3ab9ee9b6c4c03e3270a43bdc6ebd7c9b"))
 	(1348, uint256("0x0000000000f8b1e4a9c24bead964d525d79e01343db8f351eb703afc329521c9"))
-	(2373, uint256("0x0000000002ccb95149d592dd64d9f653162baedaeee2e792a2d939cf26045b77"));
+	(2373, uint256("0x0000000002ccb95149d592dd64d9f653162baedaeee2e792a2d939cf26045b77"))
+	(3667, uint256("0x0000000002993695d595e7e19571396d2242ca68c2cd41d4de5750ad9de4975b"));
 	
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1523730947, // * UNIX timestamp of last checkpoint block
-    2501,    // * total number of transactions between genesis and last checkpoint
+    1524098873, // * UNIX timestamp of last checkpoint block
+    3892,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     576        // * estimated number of transactions per day after checkpoint
 };
@@ -96,7 +97,7 @@ public:
         pchMessageStart[1] = 0xb1;
         pchMessageStart[2] = 0xf8;
         pchMessageStart[3] = 0x3a;
-        vAlertPubKey = ParseHex("04f40b1c024e28b01572cd45e6eb4af99be7df0f076ff6c31b8c4c43bd44885cf6c8c78241e6cac5dadee283f354e46c19830a00615cbb1255aa8521fb90ac12c5");
+        vAlertPubKey = ParseHex("0474325e62dac7856f972a4d9718245bf2bc47cff01641eb60ab22226176527d82606beee1802538250d4cbf34b49c15d87274a6e1ed4a9458faeb4dd44b4f02c7");
         nDefaultPort = 60128;
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Zond starting difficulty is 1 / 2^12
         nSubsidyHalvingInterval = 210000;
@@ -161,7 +162,7 @@ public:
         fTestnetToBeDeprecatedFieldRPC = false;
         fHeadersFirstSyncingActive = false;
         nPoolMaxTransactions = 3;
-        strSporkKey = "04f40b1c024e28b01572cd45e6eb4af99be7df0f076ff6c31b8c4c43bd44885cf6c8c78241e6cac5dadee283f354e46c19830a00615cbb1255aa8521fb90ac12c5";
+        strSporkKey = "045c558d49d2f3f022f79eee5650fcd1bd6ad325660be4e45374f5b5b60016a5e3e2269642f01ae6e914d58d5259403dc3c1e5ed83c000e7ce250dfb7473004308";
         
         strObfuscationPoolDummyAddress = "ZMHLTkjhzkK2WzCs4hkYohN1oEEGLwphBC";
         nStartMasternodePayments = 1523548800; //Thursday, 12 April 2018 16:00:00 UTC
